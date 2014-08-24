@@ -291,10 +291,10 @@ class SubnetCalculatorImpl implements SubnetCalculator {
 
 	private function transformDottedToBinary($address) {
 		$parts = explode(".", $address);
-    $bin = array();
-    foreach ($parts as $part)
-    	$bin[] = str_pad(decbin($part), 8, "0", STR_PAD_LEFT);
-    return implode("", $bin);
+		$bin = array();
+		foreach ($parts as $part)
+			$bin[] = str_pad(decbin($part), 8, "0", STR_PAD_LEFT);
+		return implode("", $bin);
 	}
 
 	private function transformBinaryToDecimal($binary) {
@@ -307,7 +307,7 @@ class SubnetCalculatorImpl implements SubnetCalculator {
 		$parts=str_split($binary, 8);
 		foreach($parts as $part)
 			$dotted[] = bindec($part);
-    return implode(".", $dotted) ;
+		return implode(".", $dotted) ;
 	}
 	
 	private function determineBroadcastAddress($host, $subnet) {
