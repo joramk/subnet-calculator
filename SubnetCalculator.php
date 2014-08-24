@@ -26,7 +26,7 @@ require_once('SubnetCalculatorImpl.class.php');
 $server = new soap_server();
 
 // Define our namespace
-$namespace = "http://SubnetCalculator.srv1c20.csl.intern";
+$namespace = "http://subnetcalculator.webservice.lonet.org";
  
 // Configure our WSDL
 $server->configureWSDL("SubnetCalculator");

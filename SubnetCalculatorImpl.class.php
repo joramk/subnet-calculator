@@ -405,5 +405,3 @@ class SubnetCalculatorImpl implements SubnetCalculator {
 		return true;
 	}
 }
-
-?>
